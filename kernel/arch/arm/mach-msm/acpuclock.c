@@ -1126,7 +1126,7 @@ void __init msm_acpu_clock_init(struct msm_acpu_clock_platform_data *clkdata)
     
     /* FIH, NeoCHChen, 2010/08/26 { */
     /* If RAM is 2G, ACPU/AXI max. clock are 480/160 MHz; If RAM is 4G, ACPU/AXI max. clock are 600/200 MHz*/
-#ifdef CONFIG_FIH_PROJECT_F0X
+#ifdef CONFIG_FIH_PROJECT_F0XX
     pr_info("Reading RAM size.\n");
     if(fih_read_dram_info_from_smem() == DRAM_4G_MAGIC)
     {
